@@ -9,6 +9,15 @@ import Week5 from "../pages/Week5/week5";
 import Week6 from "../pages/Week6/week6";
 import Week7 from "../pages/Week7/week7";
 
+
+// Import week 4 components
+import SubHome from "../components/Week4/pages/Home";
+import About from "../components/Week4/pages/About";
+import Contact from "../components/Week4/pages/Contact";
+import UserProfile from "../components/Week4/pages/UserProfile";
+import NotFound from "../components/Week4/pages/NotFound";
+
+
 function AppRoutes() {
     return (
         <Router>
@@ -34,6 +43,14 @@ function AppRoutes() {
                 <Route path="/week5" element={<Week5 />} />
                 <Route path="/week6" element={<Week6 />} />
                 <Route path="/week7" element={<Week7 />} />
+           
+                {/* Week 4 Tasks */}
+                <Route path="/home" element={<SubHome />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/user/:userId" element={<UserProfile />} />
+                
+                <Route path="*" element={<NotFound />} />
             </Routes>
         </Router>
     )
