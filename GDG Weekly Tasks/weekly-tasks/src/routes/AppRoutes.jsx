@@ -8,6 +8,7 @@ import Week4 from "../pages/Week4/week4";
 import Week5 from "../pages/Week5/week5";
 import Week6 from "../pages/Week6/week6";
 import Week7 from "../pages/Week7/week7";
+import Week8 from "../pages/Week8/week8";
 
 
 // Import week 4 components
@@ -31,6 +32,7 @@ function AppRoutes() {
                     <li><Link className="text-white hover:text-gray-400" to="/week5">Week 5</Link></li>
                     <li><Link className="text-white hover:text-gray-400" to="/week6">Week 6</Link></li>
                     <li><Link className="text-white hover:text-gray-400" to="/week7">Week 7</Link></li>
+                    <li><Link className="text-white hover:text-gray-400" to="/week8">Week 8</Link></li>
                 </ul>
             </nav>
             
@@ -43,6 +45,7 @@ function AppRoutes() {
                 <Route path="/week5" element={<Week5 />} />
                 <Route path="/week6" element={<Week6 />} />
                 <Route path="/week7" element={<Week7 />} />
+                <Route path="/week8" element={<Week8 />} />
            
                 {/* Week 4 Tasks */}
                 <Route path="/home" element={<SubHome />} />

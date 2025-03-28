@@ -1,5 +1,4 @@
 import React from 'react'
-import CharacterCounter from '../../components/Week7/CharacterCounter'
 
 function Task1() {
   return (
@@ -8,7 +7,7 @@ function Task1() {
         <p className="mb-4">
             Build a React app where users type in a text area, and the app
         </p>
-        <CharacterCounter />
+        {/* <Main /> */}
     </section>
   )
 }
